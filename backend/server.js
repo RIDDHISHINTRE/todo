@@ -43,6 +43,6 @@ app.delete("/tasks/:id", async (req, res) => {
   res.json({ message: "Deleted" });
 });
 
-app.listen(process.env.PORT, () => {
-  console.log("Server running on port", process.env.PORT);
+app.listen(process.env.PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${process.env.PORT}`);
 });
